@@ -1,8 +1,10 @@
+import { default as axios } from 'axios';
+
 const func = async () => {
     try {
-        const photos = await fetch('https://jsonplaceholder.typicode.com/photos')
-        .then((response) => response.json())
-        .then((json) => console.log(json));
+        const photos = await axios.get(
+            'https://jsonplaceholder.typicode.com/photos'
+        )
         return photos.data;
     } catch (error) {
         console.log(error);
