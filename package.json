@@ -2,7 +2,7 @@
   "dependencies": {
     "mysql": "^2.18.1"
   },
-  "name": "js-start",
+  "name": "promise",
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {},
